@@ -1,26 +1,60 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevLinks</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Template Básico</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-    
-    <div id="container">
-        <div id="profile">
-            <img
-             src="./assets/avatar.png" 
-             alt="foto de mayk"
-            />
-            <p>@maykbrito</p>
-        </div>
-    </div>
+
+    <header>
+        <h1>Teste template</h1>
+    </header>
+
+    <main>
+        <h2>Conteúdo Principal</h2>
+        <p>Este é um exemplo de um template básico com CSS e JavaScript.</p>
+        <button id="meuBotao">Clique-me</button>
+        <p id="mensagem"></p>
+    </main>
+
+    <script>
+        // Exemplo de JavaScript
+        document.getElementById('meuBotao').addEventListener('click', function() {
+            document.getElementById('mensagem').textContent = 'Botão clicado!';
+        });
+    </script>
 
 </body>
 </html>
